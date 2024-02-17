@@ -254,6 +254,16 @@ const Navbar = () => {
                         >
                           <a href={Bio.github} target="_blank" style={{textDecoration: "none", color:"white"}} rel="noreferrer" >Github Profile</a>
                         </GitHubButton>
+                        <ResumeButton
+                            style={{
+                                padding: "10px 16px",
+                                background: `${theme.primary}`,
+                                color: "white",
+                                width: "max-content"
+                            }}
+                        >
+                          <a href={Bio.resume} target="_blank" style={{textDecoration: "none", color:"white"}} rel="noreferrer" >Check Resume</a>
+                        </ResumeButton>
                     </MobileMenu>
                 )
             }
