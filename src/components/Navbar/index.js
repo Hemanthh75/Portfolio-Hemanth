@@ -178,8 +178,9 @@ const Navbar = () => {
     return (
         <Nav>
             <NavContainer>
-                <NavLogo to="/">
+                <NavLogo>
                     <a 
+                    href="/"
                       style={{
                         display: "flex",
                         alignItems: "center",
