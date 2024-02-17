@@ -201,8 +201,13 @@ const Navbar = () => {
                     <NavLink href="#education">Education</NavLink>
                 </NavItems>
                 <ButtonContainer>
-          <GitHubButton><a href={Bio.github} target="_blank" rel="noreferrer" style={{textDecoration: "none", color:"white"}}>Github Profile</a></GitHubButton>
-          <ResumeButton><a href={Bio.resume} target="_blank" rel="noreferrer" style={{textDecoration: "none", color:"white",}}>Check Resume</a></ResumeButton>
+         <button onClick={() => { window.open(Bio.github, "_blank"); }} style={{background: "transparent", border: "none"}}>
+         <GitHubButton> Github Profile </GitHubButton>
+            </button>
+            
+          <button onClick={() => { window.open(Bio.resume, "_blank"); }} style={{background: "transparent", border: "none"}}>
+               <ResumeButton>Check Resume</ResumeButton>
+            </button>
         </ButtonContainer>
             </NavContainer>
             {
